@@ -1,11 +1,12 @@
 
-import React from "react";
+import React, { useState } from "react";
 import './../styles/App.css';
 
 const App = () => {
+  const[todo,setTodo]=useState([]);
   return (
     <div>
-        {/* Do not remove the main div */}
+        
     </div>
   )
 }
