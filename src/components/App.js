@@ -26,12 +26,16 @@ const App = () => {
         <input type="text" value={inputValue} onChange={handleChange}/>
         <button onClick={addTodo}>Add Todo</button>
 
+        <ul style={{listStyleType:"none"}}>
         {todos.map((todo,index)=>(
-          <div key={index}>
-            <span >{todo}</span>
+          <li key={index}>
+            
+            {todo}
+            
             <button onClick={() => removeToDo(index)}>Delete</button>
-            </div>
+            </li>
         ))}
+        </ul>
     </div>
   )
 }
